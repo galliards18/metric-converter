@@ -5,6 +5,11 @@ const apiRoutes = require('./routes/api.js');
 
 const app = express();
 
+// Root route — this handles GET /
+app.get('/', (req, res) => {
+  res.send('Metric Converter API is running');
+});
+
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
@@ -17,3 +22,9 @@ app.listen(PORT, () => {
 
 
 module.exports = app; // for testing
+
+
+
+// Other routes (e.g., /api/convert) go here...
+
+
