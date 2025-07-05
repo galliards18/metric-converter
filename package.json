@@ -4,8 +4,10 @@
   "description": "Metric-Imperial Converter",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js",
-    "test": "mocha --timeout 5000"
+  "start": "node server.js",
+  "test": "mocha --timeout 5000"
+}
+
   },
   "keywords": [],
   "author": "",
